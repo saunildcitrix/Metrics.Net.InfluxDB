@@ -41,8 +41,8 @@
     <AssemblyOriginatorKeyFile>Citrix-MetricsInfluxDBSigningKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Metrics, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Metrics.NET.0.5.0-pre\lib\net45\Metrics.dll</HintPath>
+    <Reference Include="Metrics, Version=0.5.4.0, Culture=neutral, PublicKeyToken=9561feaa0f3e7cf5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Metrics.NET.Citrix.Signed.0.5.3\lib\net45\Metrics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -75,9 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Citrix-MetricsInfluxDBSigningKey.snk" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
